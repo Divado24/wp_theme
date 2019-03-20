@@ -92,14 +92,6 @@ function divadoCustomize($wp_customize) {
         'height' => 273
     )));
     
-    $wp_customize->add_setting('divado-logo-link');
-    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'divado-logo-link-control', array(
-        'label' => 'Link',
-        'section' => 'divado-logo-section',
-        'settings' => 'divado-logo-link',
-        'type' => 'dropdown-pages'
-    )));
-    
 
     //Background Image
     $wp_customize->add_section('divado-background-section', array(
