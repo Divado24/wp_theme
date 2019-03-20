@@ -10,6 +10,11 @@ function divado_files() {
 
 add_action('wp_enqueue_scripts', 'divado_files');
 
+add_filter('excerpt_length', 'wpdocs_custom_excerpt_length', 99);
+function wpdocs_custom_excerpt_length(){
+    return 20;
+}
+
 // Nav Menus
 register_nav_menus(array(
     'header' => __('Header Menu'),
