@@ -31,10 +31,10 @@ function send_smtp_email( $phpmailer ) {
     $phpmailer->SMTPAuth   = true; // AUTHENTIFICATION ex: false disable
     $phpmailer->Port       = '465'; // PORT NUMBER ex: 465
     $phpmailer->SMTPSecure = 'ssl'; // SECURITY PROTOCOL ex: ssl or tls
-    $phpmailer->Username   = 'divado24@gmail.com'; // EMAIL ADRESS ex: johndoe@gmail.com
-    $phpmailer->Password   = 'dwaynewade3';
-    $phpmailer->From       = 'divado24@gmail.com'; // EMAIL ADRESS ex: johndoe@gmail.com
-    $phpmailer->FromName   = 'Divado'; // EMAIL NICKNAME ex: John De
+    $phpmailer->Username   = ''; // EMAIL ADRESS ex: johndoe@gmail.com
+    $phpmailer->Password   = '';
+    $phpmailer->From       = ''; // EMAIL ADRESS ex: johndoe@gmail.com
+    $phpmailer->FromName   = ''; // EMAIL NICKNAME ex: John De
 }
 
 // Quick Validation
