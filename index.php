@@ -42,6 +42,12 @@ get_header();
 <?php } ?>
 
 <div class='container content'>
+    <?php $the_query = new WP_Query('pagename=about');
+    while ($the_query->have_posts()) : $the_query->the_post();
+        the_excerpt();
+    endwhile;
+    
+    ?>
 </div>
 
 
