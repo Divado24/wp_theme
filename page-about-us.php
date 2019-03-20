@@ -1,4 +1,9 @@
 <?php 
+
+/*
+Template Name: Contact Page Template
+*/
+
 get_header();
 
 if (have_posts()) :
