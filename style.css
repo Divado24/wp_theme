@@ -1,0 +1,120 @@
+/*
+Theme Name: Divado
+Author: Divado24
+Version: 1.0
+*/
+
+/*  HEADER  */
+
+header {
+  height: 220px;
+}
+
+.title {
+  color: white;
+}
+
+.container {
+  padding: 3.5rem 0px 3.5rem;
+}
+
+.navbar-header {
+  width: 10%;
+  height: auto;
+}
+
+#logo {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.nav ul li.menu-item {
+  display: block;
+  float: left;
+  padding: 10px 18px;
+  text-decoration: none;
+  background-color: none;
+
+  transition: font-size 0.5s linear, text-shadow 0.5s linear,
+    color 0.5s ease-out;
+  -moz-transition: font-size 0.5s linear, text-shadow 0.5s linear,
+    color 0.5s ease-out;
+  -webkit-transition: font-size 0.5s linear, text-shadow 0.5s linear,
+    color 0.5s ease-out;
+}
+
+.nav ul li.menu-item:hover {
+  font-size: 1.5em;
+  color: rgb(25, 63, 97);
+  text-shadow: 2px 2px 1px grey;
+}
+
+.nav ul li.menu-item a:link,
+.nav ul li.menu-item a:visited {
+  color: gb(79, 158, 226);
+}
+
+.nav ul li.menu-item a:hover {
+  text-decoration: none;
+}
+
+.nav ul li.current-menu-item {
+  color: rgb(25, 63, 97);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+/*  CONTACT    */
+.btn {
+  background-color: rgb(79, 158, 226);
+  color: white;
+}
+
+/*  CONTENT   */
+div.content {
+  min-height: 250px;
+}
+
+/*  CAROUSEL  */
+.carousel-item,
+.carousel-caption {
+  text-align: center;
+}
+
+.carousel-caption h3 {
+  width: fit-content;
+  margin: auto;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/*   FOOTER   */
+
+footer div.navbar-header {
+  width: 80%;
+  display: block;
+  float: left;
+}
+
+footer .logo {
+  width: 20%;
+  float: left;
+}
+
+footer img.logo {
+  width: 100%;
+}
+.info {
+  padding-top: 15px;
+}
+
+span#address {
+  padding-left: 20px;
+}
+
+/*  Media Queries   */
+@media only screen and (max-width: 1024px) {
+  div.content {
+    font-size: 1.7rem;
+  }
+}
