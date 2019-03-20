@@ -1,7 +1,7 @@
 <?php 
 
 /*
-Template Name: Contact Page Template
+Template Name: About Us Page Template
 */
 
 get_header();
