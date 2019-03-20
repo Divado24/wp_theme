@@ -83,7 +83,9 @@ function divadoCustomize($wp_customize) {
         'panel' => 'divado-panel',
         'priority' => 1
     ));
-    $wp_customize->add_setting('divado-logo');
+    $wp_customize->add_setting('divado-logo', array(
+        'default-image' => 'echo get_theme_file_uri("images/njit_logo.png")'
+    ));
     $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'divado-logo-control', array(
         'label' => 'Logo',
         'section' => 'divado-logo-section',
@@ -129,7 +131,7 @@ function divadoCustomize($wp_customize) {
 
     //Slide 1
     $wp_customize->add_setting('divado-carousel-pic1', array(
-        'defualt' => '#'
+        'defualt' => '3'
     ));
     $wp_customize->add_control(New WP_Customize_Cropped_Image_Control($wp_customize, 'divado-carousel-pic1-control', array(
         'label' => 'First Slide Image',
