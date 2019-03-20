@@ -42,12 +42,22 @@ get_header();
 <?php } ?>
 
 <div class='container content'>
+    <div>
     <?php $the_query = new WP_Query('pagename=about-us');
-    while ($the_query->have_posts()) : $the_query->the_post();
-        the_excerpt();
+    while ($the_query->have_posts()) : $the_query->the_post();?>
+        <h3><a href='<?php echo esc_url(get_permalink());?>'><?php the_title();?></a></h3>
+        <?php the_excerpt();
     endwhile;
-
     ?>
+    </div>
+    <div>
+    <?php $the_query = new WP_Query('pagename=services');
+    while ($the_query->have_posts()) : $the_query->the_post();?>
+        <h3><a href='<?php echo esc_url(get_permalink());?>'><?php the_title();?></a></h3>
+        <?php the_excerpt();
+    endwhile;
+    ?>
+    </div>
 </div>
 
 
