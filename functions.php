@@ -203,6 +203,7 @@ function divadoCustomize($wp_customize) {
         'priority' => 4
     ));
 
+    //TEL Number
     $wp_customize->add_setting('divado-tel', array(
         'default' => '+1-800-000-0000'
     ));
@@ -213,6 +214,7 @@ function divadoCustomize($wp_customize) {
         'type' => 'tel'
     )));
 
+    //Social Media
     $wp_customize->add_setting('divado-social-media', array(
         'default' => 'Yes'
     ));
@@ -222,6 +224,69 @@ function divadoCustomize($wp_customize) {
         'settings' => 'divado-social-media',
         'type' => 'radio',
         'choices' => array('Yes' => 'Yes', 'No' => 'No')
+    )));
+
+    //Linkedin
+    $wp_customize->add_setting('divado-social-media-linkedin', array(
+        'default' => 'Yes'
+    ));
+    $wp_customize->add_control(New WP_Customize_Control($wp_customize, 'divado-social-media-linkedin-control', array(
+        'label' => 'Display Linkedin icons?',
+        'section' => 'divado-footer-section',
+        'settings' => 'divado-social-media-linkedin',
+        'type' => 'radio',
+        'choices' => array('Yes' => 'Yes', 'No' => 'No')
+    )));
+    $wp_customize->add_setting('divado-social-media-linkedin-url', array(
+        'default' => '#'
+    ));
+    $wp_customize->add_control(New WP_Customize_Control($wp_customize, 'divado-social-media-linkedin-url', array(
+        'label' => 'URL',
+        'section' => 'divado-footer-section',
+        'settings' => 'divado-social-media-linkedin-url',
+        'type' => 'url'
+    )));
+
+    //Instagram
+    $wp_customize->add_setting('divado-social-media-instagram', array(
+        'default' => 'Yes'
+    ));
+    $wp_customize->add_control(New WP_Customize_Control($wp_customize, 'divado-social-media-instagram-control', array(
+        'label' => 'Display Instagram icons?',
+        'section' => 'divado-footer-section',
+        'settings' => 'divado-social-media-instagram',
+        'type' => 'radio',
+        'choices' => array('Yes' => 'Yes', 'No' => 'No')
+    )));
+    $wp_customize->add_setting('divado-social-media-instagram-url', array(
+        'default' => '#'
+    ));
+    $wp_customize->add_control(New WP_Customize_Control($wp_customize, 'divado-social-media-instagram-url', array(
+        'label' => 'URL',
+        'section' => 'divado-footer-section',
+        'settings' => 'divado-social-media-instagram-url',
+        'type' => 'url'
+    )));
+
+    //Twitter
+    $wp_customize->add_setting('divado-social-media-twitter', array(
+        'default' => 'Yes'
+    ));
+    $wp_customize->add_control(New WP_Customize_Control($wp_customize, 'divado-social-media-twitter-control', array(
+        'label' => 'Display Twitter icons?',
+        'section' => 'divado-footer-section',
+        'settings' => 'divado-social-media-twitter',
+        'type' => 'radio',
+        'choices' => array('Yes' => 'Yes', 'No' => 'No')
+    )));
+    $wp_customize->add_setting('divado-social-media-twitter-url', array(
+        'default' => '#'
+    ));
+    $wp_customize->add_control(New WP_Customize_Control($wp_customize, 'divado-social-media-twitter-url', array(
+        'label' => 'URL',
+        'section' => 'divado-footer-section',
+        'settings' => 'divado-social-media-twitter-url',
+        'type' => 'url'
     )));
 
 }

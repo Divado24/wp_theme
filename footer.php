@@ -8,9 +8,15 @@
         </div>
         <?php if (get_theme_mod('divado-social-media') == "Yes") {?>
             <div class='navbar-right' id="social-media">
-                <a href="#"><img src="<?php echo get_theme_file_uri('images/linkedin.png'); ?>" alt="Linkedin Logo"></a>
-                <a href="#"><img src="<?php echo get_theme_file_uri('images/instagram.png'); ?>" alt="Instagram Logo"></a>
-                <a href="#"><img src="<?php echo get_theme_file_uri('images/twitter.png'); ?>" alt="Twiiter Logo"></a>
+                <?php if (get_theme_mod('divado-social-media-linkedin') == "Yes") {?>
+                    <a href="#"><img src="<?php echo get_theme_file_uri('images/linkedin.png'); ?>" alt="Linkedin Logo"></a>
+                <?php } ?>
+                <?php if (get_theme_mod('divado-social-media-instagram') == "Yes") {?>
+                    <a href="#"><img src="<?php echo get_theme_file_uri('images/instagram.png'); ?>" alt="Instagram Logo"></a>
+                <?php } ?>
+                <?php if (get_theme_mod('divado-social-media-twitter') == "Yes") {?>
+                    <a href="#"><img src="<?php echo get_theme_file_uri('images/twitter.png'); ?>" alt="Twiiter Logo"></a>
+                <?php } ?>
             </div>
         <?php } ?>
     </div>
