@@ -4,11 +4,11 @@ get_header();
 
 
 <?php if (get_theme_mod('divado-carousel-display') == "Yes") {?>
-<div id="doCarousel" class="carousel slide container" data-ride="carousel">
+<div id="divado-carousel" class="carousel slide container" data-ride="carousel">
     <ol class="carousel-indicators">
-        <li data-target="#doCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#doCarousel" data-slide-to="1"></li>
-        <li data-target="#doCarousel" data-slide-to="2"></li>
+        <li data-target="#divado-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#divado-carousel" data-slide-to="1"></li>
+        <li data-target="#divado-carousel" data-slide-to="2"></li>
     </ol>
     <div class="carousel-inner">
          <div class="carousel-item active">
@@ -30,11 +30,11 @@ get_header();
             </div>
         </div>
     </div>
-        <a class="carousel-control-prev" href="#doCarousel" role='button' data-slide="prev">
+        <a class="carousel-control-prev" href="#divado-carousel" role='button' data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#doCarousel" role='button' data-slide="next">
+        <a class="carousel-control-next" href="#divado-carousel" role='button' data-slide="next">
              <span class="glyphicon glyphicon-chevron-right"></span>
             <span class="sr-only">Next</span>
         </a>

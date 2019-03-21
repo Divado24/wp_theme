@@ -89,6 +89,9 @@ div.content {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.3);
 }
+div#divado-carousel {
+  padding: 20px 0px;
+}
 
 /*   FOOTER   */
 
